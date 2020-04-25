@@ -1,290 +1,549 @@
 <!doctype html>
 <html lang="en-US">
+
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Light Theme</title>
-<link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
-<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
-<script>var __adobewebfontsappname__="dreamweaver"</script>
-<script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
-	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Light Theme</title>
+  <link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
+  <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+
+  <script type="text/javascript">
+    function clearCheckboxes() {
+      document.getElementById('field1').checked = false;
+      document.getElementById('field2').checked = false;
+      document.getElementById('field3').checked = false;
+      document.getElementById('field4').checked = false;
+      document.getElementById('field5').checked = false;
+      document.getElementById('field6').checked = false;
+      document.getElementById('field7').checked = false;
+      document.getElementById('field8').checked = false;
+      document.getElementById('field9').checked = false;
+      document.getElementById('field10').checked = false;
+      document.getElementById('field11').checked = false;
+      document.getElementById('field12').checked = false;
+      document.getElementById('field13').checked = false;
+      document.getElementById('field14').checked = false;
+      document.getElementById('field15').checked = false;
+      document.getElementById('field16').checked = false;
+      document.getElementById('field17').checked = false;
+      document.getElementById('field18').checked = false;
+      document.getElementById('field19').checked = false;
+      document.getElementById('field20').checked = false;
+      document.getElementById('field21').checked = false;
+      document.getElementById('field22').checked = false;
+      document.getElementById('field23').checked = false;
+      document.getElementById('field24').checked = false;
+      document.getElementById('field25').checked = false;
+      document.getElementById('field26').checked = false;
+      document.getElementById('field27').checked = false;
+      document.getElementById('field28').checked = false;
+      document.getElementById('field29').checked = false;
+      document.getElementById('field30').checked = false;
+      document.getElementById('field31').checked = false;
+      document.getElementById('field32').checked = false;
+      document.getElementById('field33').checked = false;
+      document.getElementById('field34').checked = false;
+      document.getElementById('field35').checked = false;
+      document.getElementById('field36').checked = false;
+      document.getElementById('field37').checked = false;
+      document.getElementById('field38').checked = false;
+      document.getElementById('field39').checked = false;
+      document.getElementById('field40').checked = false;
+      document.getElementById('field41').checked = false;
+      document.getElementById('field42').checked = false;
+      document.getElementById('field43').checked = false;
+      setCookie('field1', 0, 100);
+      setCookie('field2', 0, 100);
+      setCookie('field3', 0, 100);
+      setCookie('field4', 0, 100);
+      setCookie('field5', 0, 100);
+      setCookie('field6', 0, 100);
+      setCookie('field7', 0, 100);
+      setCookie('field8', 0, 100);
+      setCookie('field9', 0, 100);
+      setCookie('field10', 0, 100);
+      setCookie('field11', 0, 100);
+      setCookie('field12', 0, 100);
+      setCookie('field13', 0, 100);
+      setCookie('field14', 0, 100);
+      setCookie('field15', 0, 100);
+      setCookie('field16', 0, 100);
+      setCookie('field17', 0, 100);
+      setCookie('field18', 0, 100);
+      setCookie('field19', 0, 100);
+      setCookie('field20', 0, 100);
+      setCookie('field21', 0, 100);
+      setCookie('field22', 0, 100);
+      setCookie('field23', 0, 100);
+      setCookie('field24', 0, 100);
+      setCookie('field25', 0, 100);
+      setCookie('field26', 0, 100);
+      setCookie('field27', 0, 100);
+      setCookie('field28', 0, 100);
+      setCookie('field29', 0, 100);
+      setCookie('field30', 0, 100);
+      setCookie('field31', 0, 100);
+      setCookie('field32', 0, 100);
+      setCookie('field33', 0, 100);
+      setCookie('field34', 0, 100);
+      setCookie('field35', 0, 100);
+      setCookie('field36', 0, 100);
+      setCookie('field37', 0, 100);
+      setCookie('field38', 0, 100);
+      setCookie('field39', 0, 100);
+      setCookie('field40', 0, 100);
+      setCookie('field41', 0, 100);
+      setCookie('field42', 0, 100);
+      setCookie('field43', 0, 100);
+
+    }
+
+    function setCookie(c_name, value, expiredays) {
+      var exdate = new Date()
+      exdate.setDate(exdate.getDate() + expiredays)
+      document.cookie = c_name + "=" + escape(value) + ((expiredays == null) ? "" : ";expires=" + exdate)
+    }
+
+    function getCookie(c_name) {
+      if (document.cookie.length > 0) {
+        c_start = document.cookie.indexOf(c_name + "=")
+        if (c_start != -1) {
+          c_start = c_start + c_name.length + 1
+          c_end = document.cookie.indexOf(";", c_start)
+          if (c_end == -1) c_end = document.cookie.length
+          return unescape(document.cookie.substring(c_start, c_end))
+        }
+      }
+      return null
+    }
+    onload = function () {
+      document.getElementById('field1').checked = getCookie('field1') == 1 ? true : false;
+      document.getElementById('field2').checked = getCookie('field2') == 1 ? true : false;
+      document.getElementById('field3').checked = getCookie('field3') == 1 ? true : false;
+      document.getElementById('field4').checked = getCookie('field4') == 1 ? true : false;
+      document.getElementById('field5').checked = getCookie('field5') == 1 ? true : false;
+      document.getElementById('field6').checked = getCookie('field6') == 1 ? true : false;
+      document.getElementById('field7').checked = getCookie('field7') == 1 ? true : false;
+      document.getElementById('field8').checked = getCookie('field8') == 1 ? true : false;
+      document.getElementById('field9').checked = getCookie('field9') == 1 ? true : false;
+      document.getElementById('field10').checked = getCookie('field10') == 1 ? true : false;
+      document.getElementById('field11').checked = getCookie('field11') == 1 ? true : false;
+      document.getElementById('field12').checked = getCookie('field12') == 1 ? true : false;
+      document.getElementById('field13').checked = getCookie('field13') == 1 ? true : false;
+      document.getElementById('field14').checked = getCookie('field14') == 1 ? true : false;
+      document.getElementById('field15').checked = getCookie('field15') == 1 ? true : false;
+      document.getElementById('field16').checked = getCookie('field16') == 1 ? true : false;
+      document.getElementById('field17').checked = getCookie('field17') == 1 ? true : false;
+      document.getElementById('field18').checked = getCookie('field18') == 1 ? true : false;
+      document.getElementById('field19').checked = getCookie('field19') == 1 ? true : false;
+      document.getElementById('field20').checked = getCookie('field20') == 1 ? true : false;
+      document.getElementById('field21').checked = getCookie('fiel21') == 1 ? true : false;
+      document.getElementById('field22').checked = getCookie('field22') == 1 ? true : false;
+      document.getElementById('field23').checked = getCookie('field23') == 1 ? true : false;
+      document.getElementById('field24').checked = getCookie('field24') == 1 ? true : false;
+      document.getElementById('field25').checked = getCookie('field25') == 1 ? true : false;
+      document.getElementById('field26').checked = getCookie('field26') == 1 ? true : false;
+      document.getElementById('field27').checked = getCookie('field27') == 1 ? true : false;
+      document.getElementById('field28').checked = getCookie('field28') == 1 ? true : false;
+      document.getElementById('field29').checked = getCookie('field29') == 1 ? true : false;
+      document.getElementById('field30').checked = getCookie('field30') == 1 ? true : false;
+      document.getElementById('field31').checked = getCookie('field31') == 1 ? true : false;
+      document.getElementById('field32').checked = getCookie('field32') == 1 ? true : false;
+      document.getElementById('field33').checked = getCookie('field33') == 1 ? true : false;
+      document.getElementById('field34').checked = getCookie('field34') == 1 ? true : false;
+      document.getElementById('field35').checked = getCookie('field35') == 1 ? true : false;
+      document.getElementById('field36').checked = getCookie('field36') == 1 ? true : false;
+      document.getElementById('field37').checked = getCookie('field37') == 1 ? true : false;
+      document.getElementById('field38').checked = getCookie('field38') == 1 ? true : false;
+      document.getElementById('field39').checked = getCookie('field39') == 1 ? true : false;
+      document.getElementById('field40').checked = getCookie('field40') == 1 ? true : false;
+      document.getElementById('field41').checked = getCookie('field41') == 1 ? true : false;
+      document.getElementById('field42').checked = getCookie('field42') == 1 ? true : false;
+      document.getElementById('field43').checked = getCookie('field43') == 1 ? true : false;
+    }
+    function set_check() {
+      setCookie('field1', document.getElementById('field1').checked ? 1 : 0, 100);
+      setCookie('field2', document.getElementById('field2').checked ? 1 : 0, 100);
+      setCookie('field3', document.getElementById('field3').checked ? 1 : 0, 100);
+      setCookie('field4', document.getElementById('field4').checked ? 1 : 0, 100);
+      setCookie('field5', document.getElementById('field5').checked ? 1 : 0, 100);
+      setCookie('field6', document.getElementById('field6').checked ? 1 : 0, 100);
+      setCookie('field7', document.getElementById('field7').checked ? 1 : 0, 100);
+      setCookie('field8', document.getElementById('field8').checked ? 1 : 0, 100);
+      setCookie('field9', document.getElementById('field9').checked ? 1 : 0, 100);
+      setCookie('field10', document.getElementById('field10').checked ? 1 : 0, 100);
+      setCookie('field11', document.getElementById('field11').checked ? 1 : 0, 100);
+      setCookie('field12', document.getElementById('field12').checked ? 1 : 0, 100);
+      setCookie('field13', document.getElementById('field13').checked ? 1 : 0, 100);
+      setCookie('field14', document.getElementById('field14').checked ? 1 : 0, 100);
+      setCookie('field15', document.getElementById('field15').checked ? 1 : 0, 100);
+      setCookie('field16', document.getElementById('field16').checked ? 1 : 0, 100);
+      setCookie('field17', document.getElementById('field17').checked ? 1 : 0, 100);
+      setCookie('field18', document.getElementById('field18').checked ? 1 : 0, 100);
+      setCookie('field19', document.getElementById('field19').checked ? 1 : 0, 100);
+      setCookie('field20', document.getElementById('field20').checked ? 1 : 0, 100);
+      setCookie('field21', document.getElementById('field21').checked ? 1 : 0, 100);
+      setCookie('field22', document.getElementById('field22').checked ? 1 : 0, 100);
+      setCookie('field23', document.getElementById('field23').checked ? 1 : 0, 100);
+      setCookie('field24', document.getElementById('field24').checked ? 1 : 0, 100);
+      setCookie('field25', document.getElementById('field25').checked ? 1 : 0, 100);
+      setCookie('field26', document.getElementById('field26').checked ? 1 : 0, 100);
+      setCookie('field27', document.getElementById('field27').checked ? 1 : 0, 100);
+      setCookie('field28', document.getElementById('field28').checked ? 1 : 0, 100);
+      setCookie('field29', document.getElementById('field29').checked ? 1 : 0, 100);
+      setCookie('field30', document.getElementById('field30').checked ? 1 : 0, 100);
+      setCookie('field31', document.getElementById('field31').checked ? 1 : 0, 100);
+      setCookie('field32', document.getElementById('field32').checked ? 1 : 0, 100);
+      setCookie('field33', document.getElementById('field33').checked ? 1 : 0, 100);
+      setCookie('field34', document.getElementById('field34').checked ? 1 : 0, 100);
+      setCookie('field35', document.getElementById('field35').checked ? 1 : 0, 100);
+      setCookie('field36', document.getElementById('field36').checked ? 1 : 0, 100);
+      setCookie('field37', document.getElementById('field37').checked ? 1 : 0, 100);
+      setCookie('field38', document.getElementById('field38').checked ? 1 : 0, 100);
+      setCookie('field39', document.getElementById('field39').checked ? 1 : 0, 100);
+      setCookie('field40', document.getElementById('field40').checked ? 1 : 0, 100);
+      setCookie('field41', document.getElementById('field41').checked ? 1 : 0, 100);
+      setCookie('field42', document.getElementById('field42').checked ? 1 : 0, 100);
+      setCookie('field43', document.getElementById('field43').checked ? 1 : 0, 100);
+    }
+  </script>
+
+  <script>var __adobewebfontsappname__ = "dreamweaver"</script>
+  <script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+
 <body>
-<!-- Main Container -->
-<div class="container">
-  <p align="center"><strong>TARAWEEH NAMAAZ KA TAREEKA<br>
-  </strong><strong>&nbsp;</strong>(with suggestions on how to offer at home.)</p>
-  <p align="center"><strong>USE THE CHECKBOXES TO TRACK PROGRESS</strong></p>
-<p align="center">Printable from: <a href="https://tinyurl.com/fulltaraweeh"><strong>https://tinyurl.com/fulltaraweeh</strong></a><strong> &nbsp;</strong><strong> </strong></p>
-<p><strong>Ideally: </strong>offer behind Hafiz-e-Quraan</p>
-  <p><br>
-    <strong>else: </strong>behind any ba-sharaa (one who in-deed follows shariat) person <strong>or: </strong>offer alone.</p>
-  <p><br>
-    <strong>Suggestion if not Hafiz: </strong>Recite in order from Alam tara kaifa to Surah An-nas in rakaats 1 to 10 and then repeat the same in the next 10 rakaats (Surahs at the end of this document) </p>
-<p><br>
-  <strong>*PLEASE NOTE: THESE DUAs and SURAHs HAVE BEEN PRESENTED HERE IN ROMAN ENGLISH FOR EASE, BUT PLEASE MAKE SURE TO EITHER HEAR A RECITATION OF THE SAME OR TRY TO READ AND LEARN THE ARABIC VERSIONS OF THESE WITH HELP OF SOMEONE KNOWLEDGEABLE</strong></p>
-<p align="center">&nbsp;</p>
-  <p align="center"><strong>ISHA ADAA</strong><br>
-    <img border="0" width="267" height="12" src="Picture-1.png" alt=""></p>
-<p><input type="checkbox">
-    &nbsp; &nbsp; Ada karen: 4 rakaat, Isha, Sunnat<br>
-    <br>
-    <input type="checkbox">
-    &nbsp; &nbsp; Ada karen: 4 rakaat, Isha, Farz<br>
-    <br>
-    <input type="checkbox">
-    &nbsp; &nbsp; Ada karen: 2 rakaat, Isha, Sunnat<br>
-    <br>
-    <input type="checkbox"> 
-    &nbsp; &nbsp; Ada karen: 2 rakaat, Isha, Nafl</p>
-  <p align="center">&nbsp;</p>
-  <p align="center"><strong>TARAWEEH NIYAT + IBTEDA (Begin)</strong><br>
-    <img border="0" width="267" height="12" src="Picture-1.png" alt=""></p>
-<p><input type="checkbox"> 
-    &nbsp; &nbsp; Niyat karen: 20 rakaat, Taraweeh Sunnat, 2 at a time<br>
-    <strong><br>
-    Niyat ki maine, Namaaze taraweeh Sunnat ki, waaste Allah taalaa ke, muh mera Kaabatullah sharrief ke taraf, Allah hu akbar</strong></p>
-  <p><input type="checkbox"> 
-    &nbsp; &nbsp; Ibteda karen: <br>
-    <strong><br>
-    Assalatu sunnat-ut-taraveeh yarahamakumulla wa laa ilaa ha il lallalhu wallahu akbar allahu akbar walilla hil-hamd</strong></p>
-  <p align="center">&nbsp;</p>
-  <p align="center"><strong>TARAWEEH RAKAATS </strong><strong>1 to 4</strong><br>
-    <img border="0" width="267" height="12" src="Picture-1.png" alt=""></p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Durood bar khwaaja e aalam, Sallaho alihi wasallam <br>
-    <strong>
-    <input type="checkbox">
-    &nbsp; &nbsp; Ada karen: 2 rakaat, Taraweeh, Sunnat<br>
-    </strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Total 2 rakaaten mukammal (complete) hueen</p>
-  <p><input type="checkbox"> 
-    &nbsp; &nbsp; <strong>Dua padhen (1 martaba(times)):</strong>
-    <br>
-  <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;F</strong><strong>azlum minallahi wa naimatun wa magfiratun wa rehmahtun wa Aafiyatu wa salaamatu la ilaha illallahu wallahu akbar, Allahu Akbar, walil-lahil-hamd</strong></p>
-  <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Durood bar khwaaja e aalam, Sallaho alihi wasallam <br>
-    <strong>
-    <input type="checkbox">
-&nbsp; &nbsp; Ada karen: 2 rakaat, Taraweeh, Sunnat<br>
-    </strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Total 4 rakaaten mukammal (complete) hueen<strong> </strong></p>
-  <p><strong>
-    <input type="checkbox">
-&nbsp; &nbsp; &nbsp;Rest for a few minutes<br>
-  </strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;This namaaz is called <em>taraweeh </em>because righteous people before our time used to rest after every four rakaat<strong> </strong></p>
-  <p><input type="checkbox"> 
-    &nbsp; &nbsp; &nbsp; &nbsp;Tasbeeh padhen (<strong>3 martaba (times)</strong>):<br>
-    <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Ashadu allailaha illallahu wahdahu laashareekalahu wa ashhaduanna Mohammadan abduhu wa rasooluhu. Aameen</strong><strong> </strong></p>
-  <p><input type="checkbox"> 
-    &nbsp; &nbsp; &nbsp;Dua padhen (Taraweeh dua):<br>
-    <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Subhaana zil mulki wal malakoot, Subhaana zil izzati wal azmati wal haybati wal qudrati wal kibri yaaa’yi wal jabaroot. Subhaanal malikil hayyilllazi layanaamu wala yamuut. subbuhun quddusun rabbuna wa rabbul malaaikati warrooh. Allahumma ajirna minannaari ya mujeeru ya mujeeru ya mujeer. Bi rehmatika ya ar rahmarrahimeen</strong></p>
-  <p><input type="checkbox"> 
-    &nbsp; &nbsp; &nbsp;Dua padhen (1 martaba(times)):<br>
-    <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Al badru Mohammad Mustafa sallallaho alaihi waalehi wa ashaabehi wasallama laa ilaaha illallahu wallahuakbar allahuakbar walillahil hamd. </strong></p>
-  <p align="center"><strong>&nbsp;</strong></p>
-  <p align="center"><strong>&nbsp;</strong></p>
-  <p><strong>&nbsp;</strong></p>
-  <p align="center"><strong>TARAWEEH RAKAATS </strong><strong>5 to 8</strong><br>
-    <img border="0" width="267" height="12" src="Picture-1.png" alt=""></p>
-  <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Durood bar khwaaja e aalam, Sallaho alihi wasallam<br>
-    <input type="checkbox"> 
-    &nbsp; &nbsp; &nbsp;Ada karen: 2 rakaat, Taraweeh, Sunnat<br>
-    <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Total 6 rakaaten mukammal (complete) hueen</strong></p>
-  <p><input type="checkbox"> 
-    &nbsp; &nbsp; &nbsp;Dua padhen (1 martaba(times)):<br>
-    <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;F</strong><strong>azlum minallahi wa naimatun wa magfiratun wa rehmahtun wa Aafiyatu wa salaamatu la ilaha illallahu wallahu akbar, Allahu Akbar, walil-lahil-hamd</strong></p>
-  <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Durood bar khwaaja e aalam, Sallaho alihi wasallam<br>
-    <input type="checkbox"> 
-    &nbsp; &nbsp; &nbsp;Ada karen: 2 rakaat, Taraweeh, Sunnat<br>
-    <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Total 8 rakaaten mukammal (complete) hueen</strong><strong> </strong></p>
-  <p><input type="checkbox"> 
-    &nbsp; &nbsp; &nbsp;Rest for a few minutes<br>
-    <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;This namaaz is </strong><strong>called <em>taraweeh </em>because righteous people before our time used to rest after every four rakat</strong><strong> </strong></p>
-  <p><input type="checkbox"> 
-    &nbsp; &nbsp; &nbsp;Tasbeeh padhen (<strong>3 martaba (times)</strong>)<strong>:</strong><br>
-    <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Allahumma salle alla sayyadina Mohammaduen wa laa aali sayyadina Mohammadeun wabaarik wa sallim wa salli alaa jamee il ambiaayi wal mursaleena wal malaaikatil muqhrimeena wa ala kulli malakim bi rehmatika ya ar hamar rahemeen. Aameen</strong><strong> </strong></p>
-  <p><input type="checkbox"> 
-    &nbsp; &nbsp; &nbsp;Dua padhen (Taraweeh dua):<br>
-    <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Subhaana zil mulki wal malakoot, Subhaana zil izzati wal azmati wal haybati wal qudrati wal kibri yaaa’yi wal jabaroot. Subhaanal malikil hayyilllazi layanaamu wala yamuut. subbuhun quddusun rabbuna wa rabbul malaaikati warrooh. Allahumma ajirna minannaari ya mujeeru ya mujeeru ya mujeer. Bi rehmatika ya ar rahmarrahimeen</strong></p>
-  <p><input type="checkbox"> 
-    &nbsp; &nbsp; &nbsp;Dua padhen (1 martaba(times)):<br>
-    <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Khaleefatu rasulil lahi bit tehkheeq Khairul Bashar baadal ambiaayi bit tasdeek ameer ul momineen hazrath abu bakar siddique radia allahu taala anha laailaaha illallahu wallahuakbar allahuakbar wa lil laahi hamd. </strong></p>
-  <p align="center">&nbsp;</p>
-  <p align="center"><strong>TARAWEEH RAKAATS </strong><strong>9 to 12</strong><br>
-    <img border="0" width="267" height="12" src="Picture-1.png" alt=""></p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Durood bar khwaaja e aalam, Sallaho alihi wasallam<br>
-    <input type="checkbox"> 
-    &nbsp; &nbsp; &nbsp;Ada karen: 2 rakaat, Taraweeh, Sunnat<br>
-    <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Total 10 rakaaten mukammal (complete) hueen</strong></p>
-  <p><input type="checkbox"> 
-    &nbsp; &nbsp; &nbsp;Dua padhen (1 martaba(times)):<br>
-    <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;F</strong><strong>azlum minallahi wa naimatun wa magfiratun wa rehmahtun wa Aafiyatu wa salaamatu la ilaha illallahu wallahu akbar, Allahu Akbar, walil-lahil-hamd</strong></p>
-  <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Durood bar khwaaja e aalam, Sallaho alihi wasallam<br>
-    <input type="checkbox"> 
-    &nbsp; &nbsp; &nbsp;Ada karen: 2 rakaat, Taraweeh, Sunnat<br>
-    <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Total 12 rakaaten mukammal (complete) hueen</strong><strong> </strong></p>
-  <p><input type="checkbox"> 
-    &nbsp; &nbsp; &nbsp;Rest for a few minutes<br>
-    <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;This namaaz is </strong><strong>called <em>taraweeh </em>because righteous people before our time used to rest after every four rakaat</strong><strong> </strong></p>
-  <p><input type="checkbox"> 
-    &nbsp; &nbsp; &nbsp;Tasbeeh padhen (<strong>3 martaba (times)</strong>):<br>
-    <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Subhanallahi walhamdulil laahi wa laaila ha il lallahu wallahuakbar walaahaula walakuwata illa billa hil-aliyil-zaeem. Aameen</strong><strong> </strong></p>
-  <p><input type="checkbox"> 
-    &nbsp; &nbsp; &nbsp;Dua padhen (Taraweeh dua):<br>
-    <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Subhaana zil mulki wal malakoot, Subhaana zil izzati wal azmati wal haybati wal qudrati wal kibri yaaa’yi wal jabaroot. Subhaanal malikil hayyilllazi layanaamu wala yamuut. subbuhun quddusun rabbuna wa rabbul malaaikati warrooh. Allahumma ajirna minannaari ya mujeeru ya mujeeru ya mujeer. Bi rehmatika ya ar rahmarrahimeen</strong></p>
-  <p><input type="checkbox"> 
-    &nbsp; &nbsp; &nbsp;Dua padhen (1 martaba(times)):<br>
-    <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Muzayyinul masjidi wal mimbaree wal mehraab ameeral momineen hazrat umar bin khattab radiaalahu taaala anhu laailaaha il lallahu wallahuakbar allahuakbar wa lillahil hamd.</strong></p>
-  <p align="center">&nbsp;</p>
-  <p align="center"><strong>TARAWEEH RAKAATS </strong><strong>13 to 16</strong><br>
-    <img border="0" width="267" height="12" src="Picture-1.png" alt=""></p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Durood bar khwaaja e aalam, Sallaho alihi wasallam <br>
-    <input type="checkbox"> 
-    &nbsp; &nbsp; &nbsp;Ada karen: 2 rakaat, Taraweeh, Sunnat<br>
-    <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Total 14 rakaaten mukammal (complete) hueen</strong></p>
-  <p><input type="checkbox"> 
-    &nbsp; &nbsp; &nbsp;Dua padhen (1 martaba(times)):<br>
-    <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;F</strong><strong>azlum minallahi wa naimatun wa magfiratun wa rehmahtun wa Aafiyatu wa salaamatu la ilaha illallahu wallahu akbar, Allahu Akbar, walil-lahil-hamd</strong></p>
-  <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Durood bar khwaaja e aalam, Sallaho alihi wasallam <br>
-    <input type="checkbox"> 
-    &nbsp; &nbsp; &nbsp;Ada karen: 2 rakaat, Taraweeh, Sunnat<br>
-    <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Total 16 rakaaten mukammal (complete) hueen</strong><strong> </strong></p>
-  <p><input type="checkbox"> 
-    &nbsp; &nbsp; &nbsp;Rest for a few minutes<br>
-    <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;This namaaz is </strong><strong>called <em>taraweeh </em>because righteous people in the past used to rest after every four rakaat</strong><strong> </strong></p>
-  <p><input type="checkbox"> 
-    &nbsp; &nbsp; &nbsp;Tasbeeh padhen (<strong>3 martaba (times)</strong>):<br>
-    <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Subahanallahi wabihamdihi subahanallahil aliyil azeem wa bi hamdihi astagfirulla rabbi min kulli zambyun wa khatiyatyun wa atu bu ilai. Ameen </strong><strong> </strong></p>
-  <p><input type="checkbox"> 
-    &nbsp; &nbsp; &nbsp;Dua padhen (Taraweeh dua):<br>
-    <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Subhaana zil mulki wal malakoot, Subhaana zil izzati wal azmati wal haybati wal qudrati wal kibri yaaa’yi wal jabaroot. Subhaanal malikil hayyilllazi layanaamu wala yamuut. subbuhun quddusun rabbuna wa rabbul malaaikati warrooh. Allahumma ajirna minannaari ya mujeeru ya mujeeru ya mujeer. Bi rehmatika ya ar rahmarrahimeen</strong></p>
-  <p><input type="checkbox"> 
-    &nbsp; &nbsp; &nbsp;Dua padhen (1 martaba(times)):<br>
-    <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Jamiul Quaraan kaamilul ah yaw al imaani zunnooreen ameerul momimeen Hazrat Usman ibn Affan radiallahu taa-ala anhu. Laa ilaaha ill al laa hu wallhu akbar Allahu akbar wa lillaahil hamd.</strong></p>
-  <p align="center">&nbsp;</p>
-  <p align="center"><strong>TARAWEEH RAKAATS </strong><strong>17 to 20</strong><br>
-    <img border="0" width="267" height="12" src="Picture-1.png" alt=""></p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Durood bar khwaaja e aalam, Sallaho alihi wasallam<br>
-    <input type="checkbox"> 
-    &nbsp; &nbsp; &nbsp;Ada karen: 2 rakaat, Taraweeh, Sunnat<br>
-    <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Total 18 rakaaten mukammal (complete) hueen</strong></p>
-  <p><input type="checkbox"> 
-    &nbsp; &nbsp; &nbsp;Dua padhen (1 martaba(times)):<br>
-    <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;F</strong><strong>azlum minallahi wa naimatun wa magfiratun wa rehmahtun wa Aafiyatu wa salaamatu la ilaha illallahu wallahu akbar, Allahu Akbar, walil-lahil-hamd</strong></p>
-  <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Durood bar khwaaja e aalam, Sallaho alihi wasallam<br>
-    <input type="checkbox"> 
-    &nbsp; &nbsp; &nbsp;Ada karen: 2 rakaat, Taraweeh, Sunnat<br>
-    <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Total 20 rakaaten mukammal (complete) hueen</strong><strong> </strong></p>
-  <p><input type="checkbox"> 
-    &nbsp; &nbsp; &nbsp;Rest for a few minutes<br>
-    <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;This namaaz is </strong><strong>called <em>taraweeh </em>because righteous people before our time used to rest after every four rakaat</strong><strong> </strong></p>
-  <p><input type="checkbox"> 
-    &nbsp; &nbsp; &nbsp;Tasbeeh padhen (<strong>3 martaba (times)</strong>):<br>
-    <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Astagfirullaha Astagfirullaha Astagfirullahal aliyil azeemal lazi laa ila ha illa huwal hayyul khayyum gaffaruz zunoob sattarul uyoob allamul guyoob kashaful karoob ya mukhallibal khuloob wal absari wa atubu ilayh. Aameen </strong><strong> </strong></p>
-  <p><input type="checkbox"> 
-    &nbsp; &nbsp; &nbsp;Dua padhen (Taraweeh dua):<br>
-    <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Subhaana zil mulki wal malakoot, Subhaana zil izzati wal azmati wal haybati wal qudrati wal kibri yaaa’yi wal jabaroot. Subhaanal malikil hayyilllazi layanaamu wala yamuut. subbuhun quddusun rabbuna wa rabbul malaaikati warrooh. Allahumma ajirna minannaari ya mujeeru ya mujeeru ya mujeer. Bi rehmatika ya ar rahmarrahimeen</strong></p>
-  <p><input type="checkbox"> 
-    &nbsp; &nbsp; &nbsp;Dua padhen (1 martaba(times)):<br>
-    <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Asadullahil gaalib mazharul ajaaib wal garraib imaamul masharik wal magaarib ameerul momineen Hazrath Ali bin abi taalib radiaalahu taala anhu Laa ilaaha ill al laa hu wallhu akbar Allahu akbar wa lillaahil hamd.</strong></p>
-  <p align="center">&nbsp;</p>
-  <p align="center"><strong>ISHA WITR AND NAFL</strong><br>
-    <img border="0" width="267" height="12" src="Picture-1.png" alt=""><strong></strong></p>
-<p><input type="checkbox"> 
-  &nbsp; &nbsp; &nbsp;Ada karen: 3 rakaat, Isha, Witr<br>
-  <br>
-    <input type="checkbox"> 
-    &nbsp; &nbsp; &nbsp;Ada karen: 2 rakaat, Isha, Nafl</p>
-  <div>
+  <!-- Main Container -->
+  <div class="container">
+    <p align="center"><strong>TARAWEEH NAMAAZ KA TAREEKA<br>
+      </strong><strong>&nbsp;</strong>(with suggestions on how to offer at home.)</p>
+    <p align="center"><strong>USE THE CHECKBOXES TO TRACK PROGRESS</strong></p>
+    <p align="center">Printable from: <a
+        href="https://tinyurl.com/fulltaraweeh"><strong>https://tinyurl.com/fulltaraweeh</strong></a><strong>
+        &nbsp;</strong><strong> </strong></p>
+    <p><strong>Ideally: </strong>offer behind Hafiz-e-Quraan</p>
+    <p><br>
+      <strong>else: </strong>behind any ba-sharaa (one who in-deed follows shariat) person <strong>or: </strong>offer
+      alone.</p>
+    <p><br>
+      <strong>Suggestion if not Hafiz: </strong>Recite in order from Alam tara kaifa to Surah An-nas in rakaats 1 to 10
+      and then repeat the same in the next 10 rakaats (Surahs at the end of this document) </p>
+    <p><br>
+      <strong>*PLEASE NOTE: THESE DUAs and SURAHs HAVE BEEN PRESENTED HERE IN ROMAN ENGLISH FOR EASE, BUT PLEASE MAKE
+        SURE TO EITHER HEAR A RECITATION OF THE SAME OR TRY TO READ AND LEARN THE ARABIC VERSIONS OF THESE WITH HELP OF
+        SOMEONE KNOWLEDGEABLE</strong></p>
+    <p align="center">&nbsp;</p>
+    <input type="button" onclick="clearCheckboxes()" value="Clear all ticks." />
+    <p align="center">&nbsp;</p>
+    <p align="center"><strong>ISHA ADAA</strong><br>
+      <img border="0" width="267" height="12" src="Picture-1.png" alt=""></p>
+    <p><input type="checkbox" onchange="set_check();" name="field1" id="field1">
+      &nbsp; &nbsp; Ada karen: 4 rakaat, Isha, Sunnat<br>
+      <br>
+      <input type="checkbox" onchange="set_check();" name="field2" id="field2">
+      &nbsp; &nbsp; Ada karen: 4 rakaat, Isha, Farz<br>
+      <br>
+      <input type="checkbox" onchange="set_check();" name="field3" id="field3">
+      &nbsp; &nbsp; Ada karen: 2 rakaat, Isha, Sunnat<br>
+      <br>
+      <input type="checkbox" onchange="set_check();" name="field4" id="field4">
+      &nbsp; &nbsp; Ada karen: 2 rakaat, Isha, Nafl</p>
+    <p align="center">&nbsp;</p>
+    <p align="center"><strong>TARAWEEH NIYAT + IBTEDA (Begin)</strong><br>
+      <img border="0" width="267" height="12" src="Picture-1.png" alt=""></p>
+    <p><input type="checkbox" onchange="set_check();" name="field5" id="field5">
+      &nbsp; &nbsp; Niyat karen: 20 rakaat, Taraweeh Sunnat, 2 at a time<br>
+      <strong><br>
+        Niyat ki maine, Namaaze taraweeh Sunnat ki, waaste Allah taalaa ke, muh mera Kaabatullah sharrief ke taraf,
+        Allah hu akbar</strong></p>
+    <p><input type="checkbox" onchange="set_check();" name="field6" id="field6">
+      &nbsp; &nbsp; Ibteda karen: <br>
+      <strong><br>
+        Assalatu sunnat-ut-taraveeh yarahamakumulla wa laa ilaa ha il lallalhu wallahu akbar allahu akbar walilla
+        hil-hamd</strong></p>
+    <p align="center">&nbsp;</p>
+    <p align="center"><strong>TARAWEEH RAKAATS </strong><strong>1 to 4</strong><br>
+      <img border="0" width="267" height="12" src="Picture-1.png" alt=""></p>
+    <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Durood bar khwaaja e aalam, Sallaho alihi wasallam <br>
+      <strong>
+        <input type="checkbox" onchange="set_check();" name="field7" id="field7">
+        &nbsp; &nbsp; Ada karen: 2 rakaat, Taraweeh, Sunnat<br>
+      </strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Total 2 rakaaten mukammal (complete) hueen</p>
+    <p><input type="checkbox" onchange="set_check();" name="field8" id="field8">
+      &nbsp; &nbsp; <strong>Dua padhen (1 martaba(times)):</strong>
+      <br>
+      <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;F</strong><strong>azlum minallahi wa naimatun wa magfiratun wa rehmahtun
+        wa Aafiyatu wa salaamatu la ilaha illallahu wallahu akbar, Allahu Akbar, walil-lahil-hamd</strong></p>
+    <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Durood bar khwaaja e aalam, Sallaho alihi wasallam <br>
+      <strong>
+        <input type="checkbox" onchange="set_check();" name="field9" id="field9">
+        &nbsp; &nbsp; Ada karen: 2 rakaat, Taraweeh, Sunnat<br>
+      </strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Total 4 rakaaten mukammal (complete) hueen<strong> </strong></p>
+    <p><strong>
+        <input type="checkbox" onchange="set_check();" name="field10" id="field10">
+        &nbsp; &nbsp; &nbsp;Rest for a few minutes<br>
+      </strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;This namaaz is called <em>taraweeh </em>because righteous people
+      before our time used to rest after every four rakaat<strong> </strong></p>
+    <p><input type="checkbox" onchange="set_check();" name="field11" id="field11">
+      &nbsp; &nbsp; &nbsp; &nbsp;Tasbeeh padhen (<strong>3 martaba (times)</strong>):<br>
+      <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Ashadu allailaha illallahu wahdahu laashareekalahu wa ashhaduanna
+        Mohammadan abduhu wa rasooluhu. Aameen</strong><strong> </strong></p>
+    <p><input type="checkbox" onchange="set_check();" name="field12" id="field12">
+      &nbsp; &nbsp; &nbsp;Dua padhen (Taraweeh dua):<br>
+      <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Subhaana zil mulki wal malakoot, Subhaana zil izzati wal azmati wal
+        haybati wal qudrati wal kibri yaaa’yi wal jabaroot. Subhaanal malikil hayyilllazi layanaamu wala yamuut.
+        subbuhun quddusun rabbuna wa rabbul malaaikati warrooh. Allahumma ajirna minannaari ya mujeeru ya mujeeru ya
+        mujeer. Bi rehmatika ya ar rahmarrahimeen</strong></p>
+    <p><input type="checkbox" onchange="set_check();" name="field13" id="field13">
+      &nbsp; &nbsp; &nbsp;Dua padhen (1 martaba(times)):<br>
+      <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Al badru Mohammad Mustafa sallallaho alaihi waalehi wa ashaabehi
+        wasallama laa ilaaha illallahu wallahuakbar allahuakbar walillahil hamd. </strong></p>
+    <p align="center"><strong>&nbsp;</strong></p>
+    <p align="center"><strong>&nbsp;</strong></p>
+    <p><strong>&nbsp;</strong></p>
+    <p align="center"><strong>TARAWEEH RAKAATS </strong><strong>5 to 8</strong><br>
+      <img border="0" width="267" height="12" src="Picture-1.png" alt=""></p>
+    <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Durood bar khwaaja e aalam, Sallaho alihi wasallam<br>
+      <input type="checkbox" onchange="set_check();" name="field14" id="field14">
+      &nbsp; &nbsp; &nbsp;Ada karen: 2 rakaat, Taraweeh, Sunnat<br>
+      <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Total 6 rakaaten mukammal (complete) hueen</strong></p>
+    <p><input type="checkbox" onchange="set_check();" name="field15" id="field15">
+      &nbsp; &nbsp; &nbsp;Dua padhen (1 martaba(times)):<br>
+      <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;F</strong><strong>azlum minallahi wa naimatun wa magfiratun wa rehmahtun
+        wa Aafiyatu wa salaamatu la ilaha illallahu wallahu akbar, Allahu Akbar, walil-lahil-hamd</strong></p>
+    <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Durood bar khwaaja e aalam, Sallaho alihi wasallam<br>
+      <input type="checkbox" onchange="set_check();" name="field16" id="field16">
+      &nbsp; &nbsp; &nbsp;Ada karen: 2 rakaat, Taraweeh, Sunnat<br>
+      <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Total 8 rakaaten mukammal (complete) hueen</strong><strong> </strong>
+    </p>
+    <p><input type="checkbox" onchange="set_check();" name="field17" id="field17">
+      &nbsp; &nbsp; &nbsp;Rest for a few minutes<br>
+      <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;This namaaz is </strong><strong>called <em>taraweeh </em>because
+        righteous people before our time used to rest after every four rakat</strong><strong> </strong></p>
+    <p><input type="checkbox" onchange="set_check();" name="field18" id="field18">
+      &nbsp; &nbsp; &nbsp;Tasbeeh padhen (<strong>3 martaba (times)</strong>)<strong>:</strong><br>
+      <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Allahumma salle alla sayyadina Mohammaduen wa laa aali sayyadina
+        Mohammadeun wabaarik wa sallim wa salli alaa jamee il ambiaayi wal mursaleena wal malaaikatil muqhrimeena wa ala
+        kulli malakim bi rehmatika ya ar hamar rahemeen. Aameen</strong><strong> </strong></p>
+    <p><input type="checkbox" onchange="set_check();" name="field19" id="field19">
+      &nbsp; &nbsp; &nbsp;Dua padhen (Taraweeh dua):<br>
+      <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Subhaana zil mulki wal malakoot, Subhaana zil izzati wal azmati wal
+        haybati wal qudrati wal kibri yaaa’yi wal jabaroot. Subhaanal malikil hayyilllazi layanaamu wala yamuut.
+        subbuhun quddusun rabbuna wa rabbul malaaikati warrooh. Allahumma ajirna minannaari ya mujeeru ya mujeeru ya
+        mujeer. Bi rehmatika ya ar rahmarrahimeen</strong></p>
+    <p><input type="checkbox" onchange="set_check();" name="field20" id="field20">
+      &nbsp; &nbsp; &nbsp;Dua padhen (1 martaba(times)):<br>
+      <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Khaleefatu rasulil lahi bit tehkheeq Khairul Bashar baadal ambiaayi bit
+        tasdeek ameer ul momineen hazrath abu bakar siddique radia allahu taala anha laailaaha illallahu wallahuakbar
+        allahuakbar wa lil laahi hamd. </strong></p>
+    <p align="center">&nbsp;</p>
+    <p align="center"><strong>TARAWEEH RAKAATS </strong><strong>9 to 12</strong><br>
+      <img border="0" width="267" height="12" src="Picture-1.png" alt=""></p>
+    <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Durood bar khwaaja e aalam, Sallaho alihi wasallam<br>
+      <input type="checkbox" onchange="set_check();" name="field21" id="field21">
+      &nbsp; &nbsp; &nbsp;Ada karen: 2 rakaat, Taraweeh, Sunnat<br>
+      <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Total 10 rakaaten mukammal (complete) hueen</strong></p>
+    <p><input type="checkbox" onchange="set_check();" name="field22" id="field22">
+      &nbsp; &nbsp; &nbsp;Dua padhen (1 martaba(times)):<br>
+      <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;F</strong><strong>azlum minallahi wa naimatun wa magfiratun wa rehmahtun
+        wa Aafiyatu wa salaamatu la ilaha illallahu wallahu akbar, Allahu Akbar, walil-lahil-hamd</strong></p>
+    <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Durood bar khwaaja e aalam, Sallaho alihi wasallam<br>
+      <input type="checkbox" onchange="set_check();" name="field23" id="field23">
+      &nbsp; &nbsp; &nbsp;Ada karen: 2 rakaat, Taraweeh, Sunnat<br>
+      <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Total 12 rakaaten mukammal (complete) hueen</strong><strong> </strong>
+    </p>
+    <p><input type="checkbox" onchange="set_check();" name="field24" id="field24">
+      &nbsp; &nbsp; &nbsp;Rest for a few minutes<br>
+      <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;This namaaz is </strong><strong>called <em>taraweeh </em>because
+        righteous people before our time used to rest after every four rakaat</strong><strong> </strong></p>
+    <p><input type="checkbox" onchange="set_check();" name="field25" id="field25">
+      &nbsp; &nbsp; &nbsp;Tasbeeh padhen (<strong>3 martaba (times)</strong>):<br>
+      <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Subhanallahi walhamdulil laahi wa laaila ha il lallahu wallahuakbar
+        walaahaula walakuwata illa billa hil-aliyil-zaeem. Aameen</strong><strong> </strong></p>
+    <p><input type="checkbox" onchange="set_check();" name="field26" id="field26">
+      &nbsp; &nbsp; &nbsp;Dua padhen (Taraweeh dua):<br>
+      <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Subhaana zil mulki wal malakoot, Subhaana zil izzati wal azmati wal
+        haybati wal qudrati wal kibri yaaa’yi wal jabaroot. Subhaanal malikil hayyilllazi layanaamu wala yamuut.
+        subbuhun quddusun rabbuna wa rabbul malaaikati warrooh. Allahumma ajirna minannaari ya mujeeru ya mujeeru ya
+        mujeer. Bi rehmatika ya ar rahmarrahimeen</strong></p>
+    <p><input type="checkbox" onchange="set_check();" name="field27" id="field27">
+      &nbsp; &nbsp; &nbsp;Dua padhen (1 martaba(times)):<br>
+      <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Muzayyinul masjidi wal mimbaree wal mehraab ameeral momineen hazrat umar
+        bin khattab radiaalahu taaala anhu laailaaha il lallahu wallahuakbar allahuakbar wa lillahil hamd.</strong></p>
+    <p align="center">&nbsp;</p>
+    <p align="center"><strong>TARAWEEH RAKAATS </strong><strong>13 to 16</strong><br>
+      <img border="0" width="267" height="12" src="Picture-1.png" alt=""></p>
+    <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Durood bar khwaaja e aalam, Sallaho alihi wasallam <br>
+      <input type="checkbox" onchange="set_check();" name="field28" id="field28">
+      &nbsp; &nbsp; &nbsp;Ada karen: 2 rakaat, Taraweeh, Sunnat<br>
+      <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Total 14 rakaaten mukammal (complete) hueen</strong></p>
+    <p><input type="checkbox" onchange="set_check();" name="field29" id="field29">
+      &nbsp; &nbsp; &nbsp;Dua padhen (1 martaba(times)):<br>
+      <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;F</strong><strong>azlum minallahi wa naimatun wa magfiratun wa rehmahtun
+        wa Aafiyatu wa salaamatu la ilaha illallahu wallahu akbar, Allahu Akbar, walil-lahil-hamd</strong></p>
+    <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Durood bar khwaaja e aalam, Sallaho alihi wasallam <br>
+      <input type="checkbox" onchange="set_check();" name="field30" id="field30">
+      &nbsp; &nbsp; &nbsp;Ada karen: 2 rakaat, Taraweeh, Sunnat<br>
+      <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Total 16 rakaaten mukammal (complete) hueen</strong><strong> </strong>
+    </p>
+    <p><input type="checkbox" onchange="set_check();" name="field31" id="field31">
+      &nbsp; &nbsp; &nbsp;Rest for a few minutes<br>
+      <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;This namaaz is </strong><strong>called <em>taraweeh </em>because
+        righteous people in the past used to rest after every four rakaat</strong><strong> </strong></p>
+    <p><input type="checkbox" onchange="set_check();" name="field32" id="field32">
+      &nbsp; &nbsp; &nbsp;Tasbeeh padhen (<strong>3 martaba (times)</strong>):<br>
+      <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Subahanallahi wabihamdihi subahanallahil aliyil azeem wa bi hamdihi
+        astagfirulla rabbi min kulli zambyun wa khatiyatyun wa atu bu ilai. Ameen </strong><strong> </strong></p>
+    <p><input type="checkbox" onchange="set_check();" name="field33" id="field33">
+      &nbsp; &nbsp; &nbsp;Dua padhen (Taraweeh dua):<br>
+      <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Subhaana zil mulki wal malakoot, Subhaana zil izzati wal azmati wal
+        haybati wal qudrati wal kibri yaaa’yi wal jabaroot. Subhaanal malikil hayyilllazi layanaamu wala yamuut.
+        subbuhun quddusun rabbuna wa rabbul malaaikati warrooh. Allahumma ajirna minannaari ya mujeeru ya mujeeru ya
+        mujeer. Bi rehmatika ya ar rahmarrahimeen</strong></p>
+    <p><input type="checkbox" onchange="set_check();" name="field34" id="field34">
+      &nbsp; &nbsp; &nbsp;Dua padhen (1 martaba(times)):<br>
+      <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Jamiul Quaraan kaamilul ah yaw al imaani zunnooreen ameerul momimeen
+        Hazrat Usman ibn Affan radiallahu taa-ala anhu. Laa ilaaha ill al laa hu wallhu akbar Allahu akbar wa lillaahil
+        hamd.</strong></p>
+    <p align="center">&nbsp;</p>
+    <p align="center"><strong>TARAWEEH RAKAATS </strong><strong>17 to 20</strong><br>
+      <img border="0" width="267" height="12" src="Picture-1.png" alt=""></p>
+    <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Durood bar khwaaja e aalam, Sallaho alihi wasallam<br>
+      <input type="checkbox" onchange="set_check();" name="field35" id="field35">
+      &nbsp; &nbsp; &nbsp;Ada karen: 2 rakaat, Taraweeh, Sunnat<br>
+      <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Total 18 rakaaten mukammal (complete) hueen</strong></p>
+    <p><input type="checkbox" onchange="set_check();" name="field36" id="field36">
+      &nbsp; &nbsp; &nbsp;Dua padhen (1 martaba(times)):<br>
+      <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;F</strong><strong>azlum minallahi wa naimatun wa magfiratun wa rehmahtun
+        wa Aafiyatu wa salaamatu la ilaha illallahu wallahu akbar, Allahu Akbar, walil-lahil-hamd</strong></p>
+    <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Durood bar khwaaja e aalam, Sallaho alihi wasallam<br>
+      <input type="checkbox" onchange="set_check();" name="field37" id="field37">
+      &nbsp; &nbsp; &nbsp;Ada karen: 2 rakaat, Taraweeh, Sunnat<br>
+      <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Total 20 rakaaten mukammal (complete) hueen</strong><strong> </strong>
+    </p>
+    <p><input type="checkbox" onchange="set_check();" name="field38" id="field38">
+      &nbsp; &nbsp; &nbsp;Rest for a few minutes<br>
+      <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;This namaaz is </strong><strong>called <em>taraweeh </em>because
+        righteous people before our time used to rest after every four rakaat</strong><strong> </strong></p>
+    <p><input type="checkbox" onchange="set_check();" name="field39" id="field39">
+      &nbsp; &nbsp; &nbsp;Tasbeeh padhen (<strong>3 martaba (times)</strong>):<br>
+      <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Astagfirullaha Astagfirullaha Astagfirullahal aliyil azeemal lazi laa
+        ila ha illa huwal hayyul khayyum gaffaruz zunoob sattarul uyoob allamul guyoob kashaful karoob ya mukhallibal
+        khuloob wal absari wa atubu ilayh. Aameen </strong><strong> </strong></p>
+    <p><input type="checkbox" onchange="set_check();" name="field40" id="field40">
+      &nbsp; &nbsp; &nbsp;Dua padhen (Taraweeh dua):<br>
+      <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Subhaana zil mulki wal malakoot, Subhaana zil izzati wal azmati wal
+        haybati wal qudrati wal kibri yaaa’yi wal jabaroot. Subhaanal malikil hayyilllazi layanaamu wala yamuut.
+        subbuhun quddusun rabbuna wa rabbul malaaikati warrooh. Allahumma ajirna minannaari ya mujeeru ya mujeeru ya
+        mujeer. Bi rehmatika ya ar rahmarrahimeen</strong></p>
+    <p><input type="checkbox" onchange="set_check();" name="field41" id="field41">
+      &nbsp; &nbsp; &nbsp;Dua padhen (1 martaba(times)):<br>
+      <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Asadullahil gaalib mazharul ajaaib wal garraib imaamul masharik wal
+        magaarib ameerul momineen Hazrath Ali bin abi taalib radiaalahu taala anhu Laa ilaaha ill al laa hu wallhu akbar
+        Allahu akbar wa lillaahil hamd.</strong></p>
+    <p align="center">&nbsp;</p>
+    <p align="center"><strong>ISHA WITR AND NAFL</strong><br>
+      <img border="0" width="267" height="12" src="Picture-1.png" alt=""><strong></strong></p>
+    <p><input type="checkbox" onchange="set_check();" name="field42" id="field42">
+      &nbsp; &nbsp; &nbsp;Ada karen: 3 rakaat, Isha, Witr<br>
+      <br>
+      <input type="checkbox" onchange="set_check();" name="field43" id="field43">
+      &nbsp; &nbsp; &nbsp;Ada karen: 2 rakaat, Isha, Nafl</p>
+    <div>
+      <p>&nbsp;</p>
+    </div>
+    <p align="center"><strong>Surah Al-Fil to Surah An-nas</strong> <br>
+      <img border="0" width="267" height="12" src="Picture-1.png" alt=""></p>
+    <p><strong>Surah Al-Fil</strong></p>
+    <ol>
+      <li>Alam tara kaifa fa'ala rabbuka bi ashaabil feel</li>
+      <li>Alam yaj'al kaidahum fee tadleel</li>
+      <li>Wa arsala 'alaihim tairan abaabeel</li>
+      <li>Tarmeehim bihijaaratim min sijjeel</li>
+      <li>Faja 'alahum ka'asfim m'akool</li>
+    </ol>
     <p>&nbsp;</p>
+    <p><strong>Surah Quraish</strong></p>
+    <ol>
+      <li>Li-eelaafi quraish</li>
+      <li>Eelaafihim rihlatash shitaaa'i wassaif</li>
+      <li>Faly'abudoo rabba haazal-bait</li>
+      <li>Allazeee at'amahum min joo'inw-wa-aamanahum min khawf</li>
+    </ol>
+    <p><strong>Surah Al-Maun</strong></p>
+    <ol>
+      <li>Ara 'aytal lazee yukazzibu biddeen</li>
+      <li>Fazaalikal lazee yadu'ul-yateem</li>
+      <li>Wa la yahuddu 'alaa ta'aamil miskeen</li>
+      <li>Fa wailul-lil musalleen</li>
+      <li>Allazeena hum 'an salaatihim saahoon</li>
+      <li>Allazeena hum yuraaa'oon</li>
+      <li>Wa yamna'oonal maa'oon</li>
+    </ol>
+    <p><strong>Surah Al-Kauthar</strong></p>
+    <ol>
+      <li>Innaaa a'tainaa kal kauthar</li>
+      <li>Fasalli li rabbika wanhar</li>
+      <li>Inna shaani'aka huwal abtar</li>
+    </ol>
+    <p><strong>Surah Al-Kafirun</strong></p>
+    <ol>
+      <li>Qul yaaa-ayyuhal kaafiroon</li>
+      <li>Laaa a'budu maa t'abudoon</li>
+      <li>Wa laaa antum 'aabidoona maaa a'bud</li>
+      <li>Wa laaa ana 'abidum maa 'abattum</li>
+      <li>Wa laaa antum 'aabidoona maaa a'bud</li>
+      <li>Lakum deenukum wa liya deen.</li>
+    </ol>
+    <p><strong>Surah An-Nasr</strong></p>
+    <ol>
+      <li>Iza jaaa'a nasrul-laahi walfath</li>
+      <li>Wa ra-aitan naasa yadkhuloona fee deenil laahi afwajaa</li>
+      <li>Fasabbih bihamdi rabbika wastaghfirh, innahoo kaana tawwaaba</li>
+    </ol>
+    <p><strong>Surah Al-Lahab</strong></p>
+    <ol>
+      <li>Tabbat yadaa abee Lahabinw-wa tabb</li>
+      <li>Maa aghnaa 'anhu maaluhoo wa ma kasab</li>
+      <li>Sa-yaslaa naaran zaata lahab</li>
+      <li>Wamra-atuhoo hammaa latal-hatab</li>
+      <li>Fee jeedihaa hablum mim-masad</li>
+    </ol>
+    <p><strong>Surah Al-Ikhlas</strong></p>
+    <ol>
+      <li>Qul huwal laahu ahad</li>
+      <li>Allah hus-samad</li>
+      <li>Lam yalid wa lam yoolad</li>
+      <li>Wa lam yakul-lahoo kufuwan ahad</li>
+    </ol>
+    <p><strong>Surah Al-Falaq</strong></p>
+    <ol>
+      <li>Qul a'oozu bi rabbil-falaq</li>
+      <li>Min sharri maa khalaq</li>
+      <li>Wa min sharri ghasiqin iza waqab</li>
+      <li>Wa min sharrin-naffaa-thaati fil 'uqad</li>
+      <li>Wa min sharri haasidin izaa hasad</li>
+    </ol>
+    <p><strong>Surah An-Nas</strong></p>
+    <ol>
+      <li>Qul a'oozu birabbin naas</li>
+      <li>Malikin naas</li>
+      <li>Ilaahin naas</li>
+      <li>Min sharril waswaasil khannaas</li>
+      <li>Allazee yuwaswisu fee sudoorin naas</li>
+      <li>Minal jinnati wannaas </li>
+    </ol>
   </div>
-  <p align="center"><strong>Surah Al-Fil to Surah An-nas</strong> <br>
-    <img border="0" width="267" height="12" src="Picture-1.png" alt=""></p>
-  <p><strong>Surah Al-Fil</strong></p>
-  <ol>
-    <li>Alam tara kaifa fa'ala rabbuka bi ashaabil feel</li>
-    <li>Alam yaj'al kaidahum fee tadleel</li>
-    <li>Wa arsala 'alaihim tairan abaabeel</li>
-    <li>Tarmeehim bihijaaratim min sijjeel</li>
-    <li>Faja 'alahum ka'asfim m'akool</li>
-  </ol>
-  <p>&nbsp;</p>
-  <p><strong>Surah Quraish</strong></p>
-  <ol>
-    <li>Li-eelaafi quraish</li>
-    <li>Eelaafihim rihlatash shitaaa'i wassaif</li>
-    <li>Faly'abudoo rabba haazal-bait</li>
-    <li>Allazeee at'amahum min joo'inw-wa-aamanahum min khawf</li>
-  </ol>
-  <p><strong>Surah Al-Maun</strong></p>
-  <ol>
-    <li>Ara 'aytal lazee yukazzibu biddeen</li>
-    <li>Fazaalikal lazee yadu'ul-yateem</li>
-    <li>Wa la yahuddu 'alaa ta'aamil miskeen</li>
-    <li>Fa wailul-lil musalleen</li>
-    <li>Allazeena hum 'an salaatihim saahoon</li>
-    <li>Allazeena hum yuraaa'oon</li>
-    <li>Wa yamna'oonal maa'oon</li>
-  </ol>
-  <p><strong>Surah Al-Kauthar</strong></p>
-  <ol>
-    <li>Innaaa a'tainaa kal kauthar</li>
-    <li>Fasalli li rabbika wanhar</li>
-    <li>Inna shaani'aka huwal abtar</li>
-  </ol>
-  <p><strong>Surah Al-Kafirun</strong></p>
-  <ol>
-    <li>Qul yaaa-ayyuhal kaafiroon</li>
-    <li>Laaa a'budu maa t'abudoon</li>
-    <li>Wa laaa antum 'aabidoona maaa a'bud</li>
-    <li>Wa laaa ana 'abidum maa 'abattum</li>
-    <li>Wa laaa antum 'aabidoona maaa a'bud</li>
-    <li>Lakum deenukum wa liya deen.</li>
-  </ol>
-  <p><strong>Surah An-Nasr</strong></p>
-  <ol>
-    <li>Iza jaaa'a nasrul-laahi walfath</li>
-    <li>Wa ra-aitan naasa yadkhuloona fee deenil laahi afwajaa</li>
-    <li>Fasabbih bihamdi rabbika wastaghfirh, innahoo kaana tawwaaba</li>
-  </ol>
-  <p><strong>Surah Al-Lahab</strong></p>
-  <ol>
-    <li>Tabbat yadaa abee Lahabinw-wa tabb</li>
-    <li>Maa aghnaa 'anhu maaluhoo wa ma kasab</li>
-    <li>Sa-yaslaa naaran zaata lahab</li>
-    <li>Wamra-atuhoo hammaa latal-hatab</li>
-    <li>Fee jeedihaa hablum mim-masad</li>
-  </ol>
-  <p><strong>Surah Al-Ikhlas</strong></p>
-  <ol>
-    <li>Qul huwal laahu ahad</li>
-    <li>Allah hus-samad</li>
-    <li>Lam yalid wa lam yoolad</li>
-    <li>Wa lam yakul-lahoo kufuwan ahad</li>
-  </ol>
-  <p><strong>Surah Al-Falaq</strong></p>
-  <ol>
-    <li>Qul a'oozu bi rabbil-falaq</li>
-    <li>Min sharri maa khalaq</li>
-    <li>Wa min sharri ghasiqin iza waqab</li>
-    <li>Wa min sharrin-naffaa-thaati fil 'uqad</li>
-    <li>Wa min sharri haasidin izaa hasad</li>
-  </ol>
-  <p><strong>Surah An-Nas</strong></p>
-  <ol>
-    <li>Qul a'oozu birabbin naas</li>
-    <li>Malikin naas</li>
-    <li>Ilaahin naas</li>
-    <li>Min sharril waswaasil khannaas</li>
-    <li>Allazee yuwaswisu fee sudoorin naas</li>
-    <li>Minal jinnati wannaas </li>
-  </ol>
-</div>
-<!-- Main Container Ends -->
+  <!-- Main Container Ends -->
 </body>
+
 </html>
